@@ -10,3 +10,13 @@ func TestAdd(t *testing.T) {
 		t.Errorf("should be 4 but %d", result)
 	}
 }
+
+func TestDiv(t *testing.T) {
+	result, err := Div(4, 2)
+	if err != nil {
+		t.Fail()
+	}
+	if result != 2 {
+		t.Errorf("result should be 2")
+	}
+}
